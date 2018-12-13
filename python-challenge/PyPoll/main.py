@@ -86,7 +86,7 @@ with open(pypollCSV, 'r') as csvfile:
 
     # since I wanted to only run one for loop to output the candidate results I decided to put the screenoutput and update the text file together
     # instead of running a loop for each output type
-    
+
     print("Election Results")
     pollTxt.write("Election Results\n")
     print("----------------------------")
@@ -109,7 +109,7 @@ with open(pypollCSV, 'r') as csvfile:
         findWinner = findWinner + 1
             
     print(f"Winner: {candidate[topVoteCandidate]}")
-    pollTxt.write("Winner: %s" % (candidate[topVoteCandidate]))
+    pollTxt.write("Winner: %s\n" % (candidate[topVoteCandidate]))
     print("----------------------------")
     pollTxt.write("----------------------------\n")
     
